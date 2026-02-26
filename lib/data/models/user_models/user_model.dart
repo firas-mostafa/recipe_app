@@ -12,7 +12,9 @@ class UserModel extends Equatable {
 
   factory UserModel.fromJson(Map<String, dynamic> jsonData) {
     return UserModel(
-      profilePic: ImageHelper.fixImageUrl(jsonData[ApiKey.image]),
+      profilePic: jsonData[ApiKey.image] != null
+          ? ImageHelper.fixImageUrl(jsonData[ApiKey.image])
+          : jsonData[ApiKey.image],
       email: jsonData[ApiKey.email],
       name: jsonData[ApiKey.name],
     );

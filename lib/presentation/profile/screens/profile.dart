@@ -19,8 +19,18 @@ import 'package:recipe_app/logic/user_cubit/user_cubit.dart';
 import 'package:recipe_app/presentation/widgets/custom_dialog.dart'
     show CustomDialog;
 
-class Profile extends StatelessWidget {
+class Profile extends StatefulWidget {
   const Profile({super.key});
+  @override
+  State<Profile> createState() => _ProfileState();
+}
+
+class _ProfileState extends State<Profile> {
+  @override
+  void initState() {
+    super.initState();
+    context.read<UserCubit>().getMe();
+  }
 
   @override
   Widget build(BuildContext context) {

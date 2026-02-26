@@ -1,6 +1,8 @@
 class EndPoint {
-  static String baseUrl = "https://n8xsgbkx-8000.euw.devtunnels.ms/";
-  // static String baseUrl = "http://localhost:8000/";
+  // static String baseUrl = "https://n8xsgbkx-8000.euw.devtunnels.ms/"; // use Forward a Port method
+  // static String baseUrl = "http://localhost:8000/";  // In Web Browser and desktop
+  static String baseUrl = "http://10.0.2.2:8000/"; // This for your emulator
+
   static String api = "api/";
   static String recipe = "${api}recipe/";
   static String user = "${api}user/";

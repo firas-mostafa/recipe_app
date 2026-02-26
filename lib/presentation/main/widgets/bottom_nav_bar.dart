@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:recipe_app/helpers/theme/theme_helper_extension.dart';
-import 'package:recipe_app/logic/user_cubit/user_cubit.dart';
+// import 'package:recipe_app/logic/user_cubit/user_cubit.dart';
 import 'package:recipe_app/presentation/main/logic/index_cubit/index_cubit.dart';
 import 'package:recipe_app/helpers/responsive/device_utils.dart';
 import 'package:recipe_app/helpers/responsive/size_helper_extension.dart';
@@ -42,9 +42,9 @@ class BottomNavBar extends StatelessWidget {
           itemBuilder: (_, index) => GestureDetector(
             onTap: () {
               context.read<IndexCubit>().changeIndex(index);
-              if (index == 2) {
-                context.read<UserCubit>().getMe();
-              }
+              // if (index == 2) {
+              //   context.read<UserCubit>().getMe();
+              // }
             },
             child: AnimatedContainer(
               duration: Duration(seconds: 1),

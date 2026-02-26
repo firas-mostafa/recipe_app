@@ -34,7 +34,7 @@ class PageHeader extends StatelessWidget {
             ),
           ),
           Align(
-            alignment: Alignment(.95, -.85),
+            alignment: Alignment(.9, -.65),
             child: ThemeSwitcher(color: context.colorScheme.onPrimary),
           ),
         ],
