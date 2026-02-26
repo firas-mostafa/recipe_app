@@ -1,5 +1,5 @@
 class EndPoint {
-  static String baseUrl = "https://f1w3s1c3-8000.euw.devtunnels.ms/";
+  static String baseUrl = "https://n8xsgbkx-8000.euw.devtunnels.ms/";
   // static String baseUrl = "http://localhost:8000/";
   static String api = "api/";
   static String recipe = "${api}recipe/";
